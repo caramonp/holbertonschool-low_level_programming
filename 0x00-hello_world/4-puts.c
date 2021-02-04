@@ -1,9 +1,10 @@
 #include <stdio.h>
-#include <string.h>
- 
-int main()
+/**
+ * Description: program that prints something.
+ * Return: 0 if success.
+ */
+int main(void)
 {
-char string[40];
-puts("\"Programming is like building a multilingual puzzle");
-return 0;
+  puts("\"Programming is like building a multilingual puzzle");
+  return (0);
 }
