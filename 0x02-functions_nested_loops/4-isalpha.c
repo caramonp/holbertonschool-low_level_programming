@@ -2,8 +2,8 @@
 #include <ctype.h>
 
 /**
- * main - check the code for Holberton School students.
- *
+ * _isalpha - observa si un caracter es del alfabeto
+ *@c: entrada
  * Return: Always 0.
  */
 int _isalpha(int c)

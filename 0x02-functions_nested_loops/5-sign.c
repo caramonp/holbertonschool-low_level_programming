@@ -1,8 +1,8 @@
 #include "holberton.h"
 
 /**
- * main - check the code for Holberton School students.
- *
+ * print_sign - checkea si n es un signo
+ *@n: entrada
  * Return: Always 0.
  */
 int print_sign(int n)

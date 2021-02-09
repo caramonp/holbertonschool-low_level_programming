@@ -1,6 +1,8 @@
 #include "holberton.h"
 /**
- * main -  prints 10 times the alphabe
+ * print_alphabet_x10 - imprimi 10 veces el alfabeto
+ * print_alphabet - imprime el alfabeto
+ * Description: prints 10 times the alphabe
  *
  * Return: Always 0 (Success)
  */

@@ -1,14 +1,12 @@
 #include "holberton.h"
 /**
- * main -  prints the alphabet
- *
- * Return: Always 0 (Success)
- */
-
+* print_alphabet - imprime el alfabeto
+*
+ **/
 void print_alphabet(void)
 {
 char i;
-for(i = 'a'; i <= 'z'; i++ )
+for (i = 'a'; i <= 'z'; i++)
 {
 _putchar(i);
 }
