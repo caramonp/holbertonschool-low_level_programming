@@ -3,7 +3,7 @@
 
 /**
  * print_numbers -  prints the numbers, from 0 to 9
- * i : varible
+ * c : varible
  * Return: 0
 */
 
