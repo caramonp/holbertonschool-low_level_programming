@@ -1,0 +1,1 @@
+This directory is for pointer, arrays and strings for Holberton School
