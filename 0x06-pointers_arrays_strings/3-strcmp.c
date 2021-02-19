@@ -4,7 +4,7 @@
  *_strcmp -  compares two strings.
  *@s1 : input
  *@s2 : input
- *Return: dest
+ *Return: (s1[i] - s2[i])
  *
 */
 
@@ -18,6 +18,7 @@ if (s1[i] == s2[i])
 return (0);
 else
 return (s1[i] - s2[i]);
+break;
 i++;
 }
 return (s1[i] - s2[i]);
