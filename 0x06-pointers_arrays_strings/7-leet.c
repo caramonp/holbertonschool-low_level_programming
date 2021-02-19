@@ -18,5 +18,5 @@ if (s[i] == c[j])
 s[i] = c[j + 10];
 }
 }
-return (c);
+return (s);
 }
