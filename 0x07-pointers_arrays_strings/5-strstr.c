@@ -18,6 +18,8 @@ int i, j;
 				i++;
 				return (haystack + i);
 			}
+			if (haystack[i] == needle[j] && haystack[i] == 32)
+			return (&haystack[i]);
 		}
 	}
 return ('\0');
