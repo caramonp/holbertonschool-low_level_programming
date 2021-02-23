@@ -13,12 +13,11 @@ int i, j;
 	{
 		for (j = 0 ; needle[j] != '\0'; j++)
 		{
-			if (haystack[i] == 32)
+			if (haystack[i] == needle[0])
 			{
-				i++;
 				return (haystack + i);
 			}
-			if (haystack[i] == needle[0] && haystack[i] == 32)
+			if (haystack[i] == needle[0])
 			return (&haystack[i]);
 		}
 	}
