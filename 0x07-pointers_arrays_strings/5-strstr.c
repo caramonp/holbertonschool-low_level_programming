@@ -18,7 +18,7 @@ int i, j;
 				i++;
 				return (haystack + i);
 			}
-			if (haystack[i] == needle[j] && haystack[i] == 32)
+			if (haystack[i] == needle[0] && haystack[i] == 32)
 			return (&haystack[i]);
 		}
 	}
