@@ -17,14 +17,13 @@ void print_diagsums(int *a, int size)
 		for (j = 0; j < size; j++)
 		if (i == j)
 		{
-			suma1 = suma1 + a[size - i + 1];
+			suma1 = suma1 + a[size - i];
 			printf("%d\n", suma1);
 		}
 		if (i + j == size - 1)
 		{
-			suma2 = suma2 + a[size - i - 1];
+			suma2 = suma2 + a[size - i];
 			printf("%d \n", suma2);
 		}
-
 	}
 }
