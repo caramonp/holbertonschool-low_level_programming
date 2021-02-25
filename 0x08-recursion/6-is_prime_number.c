@@ -7,17 +7,17 @@
  **/
 int define_prime(int i, int j)
 {
-  if (j == 1)
-  {
-    return(1);
-  }
-  if (i % j == 0)
-  {
-    return (0);
-  }
-  else
-  return (define_prime(i, j - 1));
-  
+if (j == 1)
+{
+	return (1);
+}
+if (i % j == 0)
+{
+	return (0);
+}
+else
+	return (define_prime(i, j - 1));
+
 }
 /**
  *is_prime_number -  definir formula de numeros primos
@@ -28,8 +28,8 @@ int is_prime_number(int n)
 {
 if (n <= 1)
 {
-  return (0);
+	return (0);
 }
 else
-return(define_prime(n, n - 1));
+return (define_prime(n, n - 1));
 }
