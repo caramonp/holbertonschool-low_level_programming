@@ -15,17 +15,15 @@ if ( min > max)
 {
   return (NULL);
 }
-p = (malloc(sizeof(int) * (i + 1)));
+p = malloc(sizeof(int) * (i + 1));
 if (p == NULL)
 {
   return (NULL);
 }
-j = 0;
-while (j < i)
-{
-j++,
-min++;
-}
-p[j] = min;
-return (p);
+for (j = 0; j <= i; j++, min++)
+	{
+		p[j] = min;
+	}
+	return (p);
+
 }
