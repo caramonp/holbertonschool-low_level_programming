@@ -6,7 +6,7 @@
  * @array: matriz
  * @size: tamaño
  * @cmp: accion
- * Return : 0
+ * Return: -1
 **/
 int int_index(int *array, int size, int (*cmp)(int))
 {
@@ -25,5 +25,5 @@ return (i);
 }
 cmp(array[i]);
 }
-return(-1);
+return (-1);
 }
