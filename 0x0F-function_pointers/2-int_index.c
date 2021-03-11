@@ -25,5 +25,5 @@ return (i);
 }
 cmp(array[i]);
 }
-return (0);
+return (-1);
 }
