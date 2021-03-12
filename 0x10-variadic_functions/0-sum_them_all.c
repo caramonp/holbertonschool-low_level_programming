@@ -23,5 +23,6 @@ suma += j;
 }
 va_end(a);
 return (suma);
+
 }
 
