@@ -18,6 +18,7 @@ list_t *add_node_end(list_t **head, const char *str)
 	if (new == NULL)
 	{
 		return (NULL);
+		free(new);
 	}
 	for (i = 0; *(str + i) != '\0'; i++)
 	{
