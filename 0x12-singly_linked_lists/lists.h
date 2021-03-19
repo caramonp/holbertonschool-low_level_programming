@@ -1,5 +1,5 @@
-#ifndef LIST_PROYECT
-#define LIST_PROYECT
+#ifndef LIST_H
+#define LIST_H
 #include <stdio.h>
 
 /**
