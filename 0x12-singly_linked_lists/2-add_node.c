@@ -23,7 +23,7 @@ if (new == NULL)
 }
 while (str[i] != '\0')
 {
-  i++
+  i++;
 }
 
 	new->str = strdup(str);
