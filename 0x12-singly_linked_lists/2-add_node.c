@@ -21,9 +21,10 @@ if (new == NULL)
 	return (NULL);
 	free(new);
 }
+
 while (str[i] != '\0')
 {
-  i++;
+i++;
 }
 
 	new->str = strdup(str);
