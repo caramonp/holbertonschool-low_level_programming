@@ -1,12 +1,10 @@
 #include "lists.h"
-#include <stdio.h>
-#include <string.h>
 #include <stdlib.h>
 
 /**
- * free_listint2 - funtion to free the list
+ * pop_listint -ction that deletes the head node of a listint_t
  * @head: pointer to a head to the list
- * Return: noting
+ * Return: principal node
  **/
 int pop_listint(listint_t **head)
 {
@@ -18,7 +16,6 @@ int pop_listint(listint_t **head)
 	}
 	position = (*head)->n;
 	free(*head);
-	*head = (*head)->next;;
-	
+	*head = (*head)->next;
 	return (position);
 }
