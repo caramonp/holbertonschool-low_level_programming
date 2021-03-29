@@ -1,0 +1,1 @@
+This directry it´s abouth file permissions 
