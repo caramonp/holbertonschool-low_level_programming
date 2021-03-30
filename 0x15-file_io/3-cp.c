@@ -37,15 +37,7 @@ do {
 		exit(99);
 	}
 } while (firts == BUFSIZ);
-	if (close(primero) == -1)
-	{
-		dprintf(STDERR_FILENO, "Error: Can't close fd FD_VALUE %d\n", primero);
-		exit(100);
-	}
-		if (close(segundo) == -1)
-	{
-		dprintf(STDERR_FILENO, "Error: Can't close fd FD_VALUE %d\n", segundo);
-		exit(100);
-	}
+	close(primero);
+	close(segundo);
 	return (0);
 }
