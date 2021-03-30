@@ -1,4 +1,5 @@
 #include "holberton.h"
+#include <limits.h>
 /**
  * main - Program that copies the content of a file to another file.
  * @argc: Argc.
@@ -28,7 +29,7 @@ if (segundo == -1)
 	exit(99);
 }
 do {
-	firts = read(primero, buffer, BUFSIZ);
+	firts = read(primero, buffer, INT_MAX);
 	second = write(segundo, buffer, firts);
 } while (firts == BSIZE);
 if (firts == -1)
