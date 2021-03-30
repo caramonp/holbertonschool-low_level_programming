@@ -1,5 +1,4 @@
 #include "holberton.h"
-#include <limits.h>
 /**
  * main - Program that copies the content of a file to another file.
  * @argc: Argc.
@@ -29,19 +28,19 @@ if (segundo == -1)
 	exit(99);
 }
 do {
-	firts = read(primero, buffer, INT_MAX);
+	firts = read(primero, buffer, BUFSIZ);
 	second = write(segundo, buffer, firts);
-} while (firts == INT_MAX);
+} while (firts >= BSIZE);
 if (firts == -1)
 {
 	dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
 	exit(98);
 }
-if (firts >= BSIZE)
-	return (0);
 if (second <= -1)
+{
 	dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
 	exit(99);
+}
 	if (close(firts) == -1)
 		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", firts), exit(100);
 	if (close(second) == -1)
