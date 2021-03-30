@@ -13,30 +13,37 @@ int main(int argc, char *argv[])
 	int primero, segundo, firts, second;
 
 	if (argc != 3)
+	{
 		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
 		exit(97);
+	}
 	primero = open(argv[1], O_RDONLY);
 	if (primero == -1)
+	{
 		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
 		exit(98);
+	}
+
 segundo = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, 0644);
 if (segundo == -1)
+{
 	dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
 	exit(99);
+}
 do {
 	firts = read(primero, buffer, BUFSIZ);
-	if (firts == -1)
-	{
-		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
-		exit(98);
-	}
 	second = write(segundo, buffer, firts);
-	if (second == -1)
-	{
-		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
-		exit(99);
-	}
 } while (firts == BUFSIZ);
+if (firts == -1)
+{
+	dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
+	exit(98);
+}
+if (second == -1)
+{
+	dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
+	exit(99);
+}
 	close(primero);
 	close(segundo);
 	return (0);
