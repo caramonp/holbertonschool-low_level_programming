@@ -11,15 +11,16 @@ int main(int argc, char *argv[])
 	int primero, segundo, firts, second;
 
 	if (argc != 3)
+	{
 		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
 		exit(97);
-
+	}
 	primero = open(argv[1], O_RDONLY);
 	if (primero == -1)
-
+		{
 		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
 		exit(98);
-
+		}
 segundo = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, 0644);
 if (segundo == -1)
 {
