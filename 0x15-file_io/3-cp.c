@@ -32,18 +32,19 @@ if (segundo == -1)
 }
 do {
 	firts = read(primero, buffer, BUFSIZ);
-	second = write(segundo, buffer, firts);
-} while (firts == BUFSIZ);
-if (firts == -1)
+	if (firts == -1)
 {
 	dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
 	exit(98);
 }
+	second = write(segundo, buffer, firts);
+	
 if (second == -1)
 {
 	dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
 	exit(99);
 }
+} while (firts == BUFSIZ);
 	close(primero);
 	close(segundo);
 	return (0);
