@@ -31,7 +31,7 @@ if (segundo == -1)
 do {
 	firts = read(primero, buffer, INT_MAX);
 	second = write(segundo, buffer, firts);
-} while (firts == BSIZE);
+} while (firts == INT_MAX);
 if (firts == -1)
 {
 	dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
