@@ -1,5 +1,4 @@
-  
-#include "hash_tables.h"
+  #include "hash_tables.h"
 
 /**
  * hash_table_set - function that adds an element to hash table
@@ -36,7 +35,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 			free(_value);
 			return (1);
 		}
-		tmp = tmp->next;	
+		tmp = tmp->next;
 	}
 
 	new = malloc(sizeof(hash_node_t));
