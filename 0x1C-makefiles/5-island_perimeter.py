@@ -8,7 +8,11 @@ def island_perimeter(grid):
 
     Args:
         grid ([integers]): [list of integers]
+        
+    Return: perimeter
     """
+    
+    
     water_zone = 0
     land_zone = 1
     perimeter = 0
