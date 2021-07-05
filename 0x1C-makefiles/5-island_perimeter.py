@@ -12,12 +12,12 @@ def island_perimeter(grid):
 				
 		Return: perimeter
 		"""
-		
-		
+
+
 		water_zone = 0
 		land_zone = 1
 		perimeter = 0
-		
+
 		for y, row in enumerate(grid):
 				for x, column in enumerate(row):
 						if column == land_zone:
